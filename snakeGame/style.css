@@ -1,0 +1,74 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.body{
+    background: url(https://wallpapers.com/images/hd/green-snake-game-character-bqvxt2p5oibadgqn.jpg);
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+#board{
+    height: 90vmin;
+    width: 95vmin;
+    background-color:rgb(40, 50, 40);
+    /* background: linear-gradient(-45deg,#00ff88,#00c6ff,#ff4e50,#f9d423); */
+    border: 2px solid purple;
+    display: grid;
+    grid-template-rows: repeat(70,1fr);
+    grid-template-columns: repeat(70,1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: cursive;
+    background: rgba(255, 255, 255, 0.119);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px rgba(244, 244, 244, 0.469);
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background: rgba(255, 255, 255, 0.119);
+    border-radius: 1.5rem;
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 0 5px rgba(244, 244, 244, 0.469);
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.head{
+    background: linear-gradient(yellow,red);
+    border-radius: 30%;
+    transform: scale(1.05);
+}
+
+.food{
+    background:linear-gradient(red,purple);
+    border-radius: 50%;
+}
+.snake{
+    background: rgb(108, 187, 60);
+    border-radius: 25%;
+
+
+}
