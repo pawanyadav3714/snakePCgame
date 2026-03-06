@@ -27,12 +27,13 @@ html,body{
     display: grid;
     grid-template-rows: repeat(70,1fr);
     grid-template-columns: repeat(70,1fr);
+    z-index: 1;
 }
 #scoreBox{
     position: absolute;
-    top: 10px;
-    right: 250px;
-    font-size: xx-large;
+    top: 0px;
+    right: 220px;
+    font-size: x-large;
     font-weight: 700;
     font-family: cursive;
     background: rgba(255, 255, 255, 0.119);
@@ -44,14 +45,14 @@ html,body{
 
 #hiscoreBox{
     position: absolute;
-    top: 10px;
-    left: 300px;
+    top: 0px;
+    left: 210px;
     background: rgba(255, 255, 255, 0.119);
     border-radius: 1.5rem;
     backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(2px);
     box-shadow: 0 0 5px rgba(244, 244, 244, 0.469);
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 700;
     font-family: cursive;
 }
@@ -81,6 +82,7 @@ html,body{
     background: transparent;
     height: 150px;
     width: 160px;
+     z-index: 0;
 
     
 }
@@ -93,6 +95,7 @@ button{
     box-shadow: 0 0 5px rgb(50, 250, 11);
     border-radius: 40%;
     background: rgba(130, 8, 8, 0.119);
+     z-index: 0;
 }
 
 #up{
