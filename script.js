@@ -50,7 +50,9 @@ function gameEngine(){
         inputdirection = {x:0, y:0};
         alert("Game Over. Press any key to play again!");
         snakeArr = [{x:13, y:15}];
-        musicSound.play();
+        musicSound.play()
+        musicSound.loop=true;
+        musicSound.play();;
         score = 0;
     }
 
@@ -172,3 +174,4 @@ document.querySelector('#right').addEventListener('touchstart', () => {
     inputdirection.y = 0;
     moveSound.play();
 })
+
